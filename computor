@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+
+import argparse
+import math
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("equ", type=string, help="display a square of a given number")
+parser.add_argument("-v", "--verbosity", action="count", default=0)
+
+args = parser.parse_args()
+
+if type == 1
+	# syntaxis:2.7
+    # solution for simple equation
+    # a*x + b = 0
+
+    if a == 0
+        print 'No solutions'
+    else
+        x = b / a
+        print 'The sole solution is',x
+
+elif type == 2
+    # syntaxis:2.7
+    # solution for quadratic equation
+    # a*x**2 + b*x + c = 0
+
+    d = b**2-4*a*c # discriminant
+
+    if d < 0:
+        print 'No solutions'
+    elif d == 0:
+        x1 = -b / (2*a)
+        print 'The sole solution is',x1
+    else: # if d > 0
+        x1 = (-b + math.sqrt(d)) / (2*a)
+        x2 = (-b - math.sqrt(d)) / (2*a)
+        print 'Solutions are',x1,'and',x2
+
+if args.verbosity >= 1:
+    print "{}^{} == {}".format(args.x, args.y, answer)
+else:
+    print answer
